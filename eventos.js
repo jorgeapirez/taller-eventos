@@ -1,5 +1,11 @@
-const miDiv = document.getElementById('miDiv');
-miDiv.addEventListener('click', function() {
-    alert('Hola! Soy el div');
-});
+const Div = document.getElementById('Div');
+function alertadiv(){
+    alert('hola soy el div')
+}
+Div.addEventListener('click', alertadiv)
+
+const boton = document.getElementById('boton')
+boton.addEventListener('click', function(event){
+    event.stopPropagation();
+})
 
